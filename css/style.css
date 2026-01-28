@@ -45,24 +45,165 @@ nav a:hover {
    background-color: #faa953;
 }
 
+/*  FOOTER  */
+footer {
+   background-color: #333;
+   color: #b7b7b7;
+   padding: 20px 30px;
+}
+.footer-container {
+   padding-top: 20px;
+}
+footer section {
+   margin-bottom: 15px;
+}
+footer h2 {
+   font-size: 30px;
+   color: #dc9e5cd8;
+}
+footer .about-store h2 {
+   padding-bottom: 7px;
+}
+footer .contacts h2 {
+   padding-bottom: 7px;
+}
+footer p {
+   padding-bottom: 5px;
+}
+footer .socials {
+   margin-top: 5px;
+   display: flex;
+   gap: 20px;
+}
+footer .socials a {
+   color: #b7b7b7;
+   text-decoration: none;
+   padding: 5px;
+   border-radius: 5px;
+}
+footer .socials a:hover {
+   background-color: #525252;
+   transform: translateY(-4%);
+   box-shadow: black 2px 5px 10px;
+   transition: all 0.3s;
+}
+footer hr {
+   color: #dc9e5cd8;
+   margin-bottom: 10px;
+}
+footer h3 {
+   text-align: center;
+   color: #525252;
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
+   body {
+      /* background-color: blue; */
+   }
+   /*  HEADER  */
    nav {
       width: 45%;
    }
-   body {
-      background-color: blue;
+   /*  FOOTER  */
+   .footer-container {
+      display: grid;
+      grid-template-areas:
+         "about-store contacts"
+         "ours-socials ours-socials"
+         "hr hr"
+         "h3 h3";
+      grid-template-columns: 1fr 1fr;
+      padding-left: 30px;
+   }
+   .about-store {
+      grid-area: about-store;
+   }
+   .about-store p {
+      width: 70%;
+   }
+   .contacts {
+      grid-area: contacts;
+   }
+   .ours-socials {
+      grid-area: ours-socials;
+      text-align: center;
+   }
+   .ours-socials h2 {
+      transform: translateX(-8%);
+   }
+   .socials {
+      justify-content: center;
+   }
+   hr {
+      grid-area: hr;
+   }
+   h3 {
+      grid-area: h3;
    }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+   /*  HEADER  */
    nav {
       width: 37%;
    }
+   /*  FOOTER  */
+   .footer-container {
+      display: flex;
+      justify-content: center;
+      gap: 23px;
+      padding-left: 30px;
+   }
+   .about-store p {
+      width: 200px;
+   }
+   .contacts p {
+      width: 1fr;
+   }
+   footer .socials {
+      justify-content: center;
+      flex-direction: column;
+      gap: 0px;
+   }
 }
 @media (min-width: 1200px) {
+   body {
+      /* background-color: red; */
+   }
+   /*  HEADER  */
    nav {
       width: 25%;
    }
-   body {
-      background-color: red;
+
+   /*  FOOTER  */
+   .footer-container {
+      display: flex;
+      justify-content: center;
+      gap: 140px;
+   }
+   .about-store {
+      grid-area: about-store;
+   }
+   .about-store p {
+      width: 200px;
+   }
+   .contacts {
+      grid-area: contacts;
+   }
+   .contacts p {
+      width: 1fr;
+   }
+   .ours-socials {
+      grid-area: ours-socials;
+   }
+   footer .socials {
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+   }
+   hr {
+      grid-area: hr;
+   }
+   h3 {
+      grid-area: h3;
    }
 }
