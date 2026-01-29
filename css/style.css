@@ -25,6 +25,7 @@ nav {
 }
 nav a {
    font-size: 13px; /*15*/
+   font-size: 13px; /*15*/
    display: flex;
    color: #fefefe;
    text-decoration: none;
@@ -65,6 +66,7 @@ main {
 }
 .hero h1 {
    font-size: 20px;
+   font-size: 20px;
 }
 .hero p {
    font-size: 13px;
@@ -72,6 +74,7 @@ main {
 main a {
    background-color: inherit;
    text-decoration: none;
+   padding: 10px 70px;
    padding: 10px 70px;
    cursor: pointer;
    border: 1px solid #aeff00;
@@ -142,6 +145,7 @@ main a:hover {
 }
 .card .text-container h3 {
    font-size: 18px; /*21*/
+   font-size: 18px; /*21*/
    color: #e68217;
 }
 .card .text-container p {
@@ -159,16 +163,32 @@ main a:hover {
    background-color: #e68217;
    color: #fefefe;
    border-radius: 10px;
+   display: block;
+   width: 120px;
+   padding: 5px;
+   margin: 5px 0px;
+   background-color: #e68217;
+   color: #fefefe;
+   border-radius: 10px;
 }
 .card .text-container s {
+   color: #b0b0b0;
    color: #b0b0b0;
 }
 .card .text-container .cost {
    color: #f7b977;
    font-size: 20px;
    text-decoration: underline dashed;
+   color: #f7b977;
+   font-size: 20px;
+   text-decoration: underline dashed;
 }
 .card .text-container a {
+   display: block;
+   width: 200px;
+   text-align: center;
+   font-size: 15px;
+   padding: 5px;
    display: block;
    width: 200px;
    text-align: center;
@@ -268,6 +288,13 @@ footer h3 {
    .card .text-container h3 {
       font-size: 21px;
    }
+   .card {
+      width: 350px;
+      height: 465px;
+   }
+   .card .text-container h3 {
+      font-size: 21px;
+   }
    /*  FOOTER  */
    .footer-container {
       display: grid;
@@ -330,6 +357,13 @@ footer h3 {
    }
    .hero a {
       padding: 10px 150px;
+   }
+   .card {
+      width: 350px;
+      height: 465px;
+   }
+   .card .text-container h3 {
+      font-size: 21px;
    }
    .card {
       width: 350px;
