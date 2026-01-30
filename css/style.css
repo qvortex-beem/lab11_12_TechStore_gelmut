@@ -99,9 +99,10 @@ main a:hover {
    justify-content: center;
    align-items: center;
 }
-.popular-goods h2 {
+article h2 {
    margin-bottom: 20px;
    color: #e68217;
+   text-align: center;
 }
 .cards-container {
    display: flex;
@@ -201,6 +202,50 @@ main a:hover {
    width: 250px;
    padding: 10px 0;
    margin-top: 15px;
+}
+/*advantages*/
+.advantages-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 15px;
+   padding: 15px 0px;
+   padding-bottom: 50px;
+}
+.advantage {
+   width: 200px;
+   height: 200px;
+   background-color: #4e4e4e;
+   box-shadow: 0 0 15px black;
+   border-radius: 10px;
+}
+.img-container {
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   background: linear-gradient(0deg, #b05e07 0%, #f7b977 100%);
+   border-radius: 10px 10px 0 0;
+   padding: 5px;
+}
+.img-container img {
+   width: 50%;
+}
+.advantage .text-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 7px;
+   margin: 5px;
+}
+.advantage .text-container h3 {
+   font-size: 15px;
+   color: #e68217;
+}
+.advantage .text-container P {
+   font-size: 13px;
+   color: #fefefe;
 }
 
 /*  FOOTER  */
@@ -427,6 +472,9 @@ footer h3 {
    }
    .card .text-container h3 {
       font-size: 21px;
+   }
+   .advantages-container {
+      gap: 30px;
    }
 
    /*  FOOTER  */
